@@ -51,6 +51,7 @@ public class UserController {
 		existingUser.setFirstName(user.getFirstName());
 		existingUser.setLastName(user.getLastName());
 		existingUser.setEmailId(user.getEmailId());
+		userRepository.save(existingUser);
 		 return existingUser;
 		
 	}
